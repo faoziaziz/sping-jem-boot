@@ -1,5 +1,6 @@
 package com.herokuapp.faoziaziz.NeiraApi.model;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 import javax.persistence.Column;
@@ -11,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="NeiraParsed")
-public class NeiraParsed{
+public class NeiraParsed implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="idNUm")
